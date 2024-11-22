@@ -15,7 +15,7 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        clifford: '#da373d'z
                     }
                 }
             },
@@ -32,7 +32,10 @@
 
 <div class='m-auto flex'>
 <div>
-    <div class="carousel w-3/5 m-auto flex rounded-2xl my-10">
+    <div class="text-7xl text-center w-fit py-10 m-auto font-bold">
+        Hotel De Luna
+    </div>
+    <div class="carousel w-3/5 m-auto flex rounded-2xl mb-10">
         <div id="slide1" class="carousel-item relative w-full">
             <img
                     src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"

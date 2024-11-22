@@ -6,6 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+    <div class="toast toast-center toast-top">
+        <div class="alert alert-success">
+            <span>Signed up successfully.</span>
+        </div>
+    </div>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script>
         tailwind.config = {
@@ -22,13 +33,9 @@
             plugins: [require("@tailwindcss/typography"), require("daisyui")],
         }
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <?php include "../components/heronavbar.php"; ?>
 
-</head>
-<body>
-<?php include "../components/heronavbar.php"; ?>
-<div class="grid grid-cols-2 w-3/5 m-auto my-auto h-[90vh] items-center">
+    <div class="grid grid-cols-2 w-3/5 m-auto my-auto h-[90vh] items-center">
         <div class="m-auto ">
             <div class=" flex flex-col">
                 <div class="font-bold text-4xl">
@@ -40,28 +47,39 @@
             </div>
 
         </div>
-        <div class="card bg-neutral-50 w-4/5 m-auto p-5">
+        <div class="card bg-neutral-50 m-auto p-5">
             <div class=''>
-                <h1 class="text-3xl font-bold">Log IN</h1>
+                <h1 class="text-3xl font-bold">Sign Up</h1>
                 <h3>Let's get you started</h3>
                 <div>
-                    <form method="POST" action="#" class="flex flex-col gap-4 py-5">
+                    <form method="post" action="/backend/signup_action.php" class="flex flex-col  gap-4 py-5">
+                        <label class="input input-bordered flex items-center gap-2">
+                            First Name
+                            <input id="fname" name="fname" type="text" class="grow border-0 rounded-md" required placeholder="Daisy" />
+                        </label>
+                        <label class="input input-bordered flex items-center gap-2">
+                            Last Name
+                            <input id="lname" name="lname" type="text" class="grow border-0 rounded-md" required placeholder="Daisy" />
+                        </label>
                         <label class="input input-bordered flex items-center gap-2">
                             Email
-                            <input type="text" class="grow border-0 rounded-md" placeholder="Daisy" />
+                            <input id="email" name="email" type="text" class="grow border-0 rounded-md" required placeholder="Daisy" />
                         </label>
+
                         <label class="input input-bordered flex items-center gap-2">
                             Password
-                            <input type="password" class="grow border-0 rounded-md" placeholder="" />
+                            <input id="password" name="password" type="password" class="grow border-0 rounded-md" required placeholder="Daisy" />
                         </label>
-                        <button class="w-full btn btn-primary">Log in</button>
+
+                        <button class="w-full btn btn-primary">Create an Account</button>
                     </form>
                 </div>
             </div>
         </div>
 
     </div>
-<footer>
-    <?php include "../components/footer.php"; ?>
-</footer>
+    <footer>
+        <?php include "../components/footer.php"; ?>
+    </footer>
 </body>
+
