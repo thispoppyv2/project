@@ -27,7 +27,7 @@ if ($curPageName == "dashboard.php") {
 ';
 }
 
-if ($curPageName == "management.php") {
+elseif ($curPageName == "management.php") {
     echo '
 <div class="navbar bg-amber-950/10 w-full m-auto">
     <div class="w-3/4 items-center m-auto">
