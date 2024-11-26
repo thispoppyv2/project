@@ -30,7 +30,7 @@
 <div class="w-3/4 m-auto text-4xl font-bold mt-5">
 
 </div>
-<div class="grid grid-cols-1 w-4/5 m-auto gap-5 p-5">
+<div class="grid grid-cols-2 w-4/5 m-auto gap-5 p-5">
     <div class="card card-bordered my-5 border-2 border-black/25 ">
 
         <?php
