@@ -29,13 +29,43 @@
 
 
 <form action="../backend/hotel-edit.php" method="post">
-    <div class="w-1/2 m-auto card card-bordered h-1/2 p-5 my-10 flex ">
+    <div class="max-w-lg m-auto card card-bordered h-1/2 p-5 my-10 flex ">
         <h1 class="text-center text-3xl font-bold">Edit Hotel</h1>
-        <div class="card">"
+        <div class="card">
             <?php
+            include '../backend/connection.php';
             $id = $_GET["id"];
-            echo '<input type="hidden" name="hotel_id" value="<?php echo $id ?>"/>';
+            $sql = "SELECT * FROM hotels where id = $id";
+
+            if($result = mysqli_query($conn, $sql)){
+                $hotel = mysqli_fetch_array($result);
+                echo  '
+            <div class="card-body">
+               <img class="rounded-2xl" src="'.$hotel['img_link'].'"/>
+               <label class="input input-bordered flex items-center gap-2">
+                     Name
+                <input value="'.$hotel['name'].'" name="name" class="input w-full">
+               </label>
+                 <label class="input input-bordered flex items-center gap-2">
+                     Address
+                <input value="'.$hotel['address'].'" name="address" class="input w-full">
+               </label>
+                <label class="input input-bordered flex items-center gap-2">
+                     Contact Number
+                <input value="'.$hotel['contact_number'].'" name="contact_number" class="input w-full">
+               </label>
+               <label class="input input-bordered flex items-center gap-2">
+                     Image Link
+                <input value="'.$hotel['img_link'].'" name="img_link" class="input w-full">
+               </label>
+                  <button type="submit" class="btn btn-accent">Confirm</button>
+            </div>
+            ';
+
+            }
             ?>
+
+
 
     </div>
 </form>

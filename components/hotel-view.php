@@ -27,11 +27,10 @@
 </head>
 <body>
 <?php include "../components/dashboardnavbar.php"; ?>
-<div class="w-3/4 m-auto text-4xl font-bold mt-5">
 
-</div>
-<div class="grid grid-cols-2 w-4/5 m-auto gap-5 p-5">
-    <div class="card card-bordered my-5 border-2 border-black/25 ">
+<div class="grid w-3/5 m-auto gap-5 ">
+    <div class="card card-bordered mt-5 border-2 border-black/25 ">
+
 
         <?php
 
@@ -48,7 +47,7 @@ if($conn == false){
 $sql = "SELECT * FROM bookings where booked_hotel = $id";
 if($result = mysqli_query($conn, $sql)){
     if(mysqli_num_rows($result) > 0){
-        echo "<table class='table'>";
+        echo "<table class='table m-auto'>";
         echo "<tr>";
         echo "<th>Book ID</th>";
         echo "<th>Customer Name</th>";
@@ -68,8 +67,8 @@ if($result = mysqli_query($conn, $sql)){
             //gagawa kayo nung hotel-delete.php
             echo '<td>
                 <div class="flex gap-2">
-                <a class="btn btn-circle" href="hotel-delete.php?id='.$row['id'].'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg></a>
-                <a class="btn btn-circle" href="hotel-edit.php?id='.$row['id'].'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg></a>
+                <a class="btn btn-circle" href="book-delete.php?id='.$row['id'].'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg></a>
+                <a class="btn btn-circle" href="book-edit.php?id='.$row['id'].'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg></a>
                 </div>
 </td>';
 
@@ -78,6 +77,7 @@ if($result = mysqli_query($conn, $sql)){
             echo "</tr>";
         }
         echo "</table>";
+
         // Free result set
         mysqli_free_result($result);
     } else{
@@ -89,6 +89,10 @@ if($result = mysqli_query($conn, $sql)){
 
 // Close connection
 mysqli_close($conn); ?>
+
+    </div>
+    <div class="">
+        <button class="place-self-end flex btn btn-primary my-5">Add Booking</button>
     </div>
 </div>
 
