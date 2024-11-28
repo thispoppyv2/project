@@ -14,7 +14,7 @@ $sql = "INSERT INTO bookings SET contact_number='$contact_number',booked_hotel='
 
 
 if (mysqli_query($conn, $sql)) {
-    header("Location:/pages/book.php"); //add new page ganon para makita na nabook na
+    header("Location:/pages/book-success.php"); //add new page ganon para makita na nabook na
 
 
 } else {

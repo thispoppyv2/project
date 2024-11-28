@@ -47,7 +47,7 @@
                 <h1 class="text-3xl font-bold">Sign Up</h1>
                 <h3>Let's get you started</h3>
                 <div>
-                    <form method="post" action="/backend/signup_action.php" class="flex flex-col gap-4 py-5">
+                    <form method="post" action="../backend/signup_action.php" class="flex flex-col gap-4 py-5">
                         <label class="input input-bordered flex items-center gap-2">
                             First Name
                             <input id="fname" name="fname" type="text" class="grow border-0 rounded-md" required placeholder="Daisy" />
