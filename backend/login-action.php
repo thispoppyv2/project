@@ -32,17 +32,10 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
             // Verify password using password_verify (assumes password is hashed using password_hash during registration)
             if (password_verify($password, $row['password'])) {
+                header("Location: ../dashboard.php");
+                exit();
                 // Check UserType to redirect accordingly
-                if ($row['role_id'] === 1) {
-                    header("Location: ../dashboard.php");
-                    exit();
-                } else {
-                    // Set session variables and redirect
-                    $_SESSION['email'] = $row['email'];
-                    $_SESSION['id'] = $row['id'];
-                    header("Location: ../customer-dashboard.php");
-                    exit();
-                }
+
             } else {
                 header("Location: ../Pages/login.php?error=Incorrect Email or Password");
                 exit();

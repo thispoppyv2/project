@@ -10,6 +10,7 @@ echo '
             <li class="flex flex-row gap-1 " >
                 <a href="/project/pages/login.php" class="btn btn-neutral text-white">Log In</a>
                 <a href="/project/pages/signup.php" class="btn btn-ghost">Sign Up</a>
+                  <a href="/project/pages/book.php" class="btn btn-ghost">Book Now</a>
             </li>
     
           
