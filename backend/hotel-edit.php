@@ -1,24 +1,25 @@
 <?php
 
-global $conn;
-include '../backend/connection.php';
+include 'connection.php';
+$id = $_POST["id"];
+$name = $_POST["name"];
+$address = $_POST["address"];
+$contact_number = $_POST["contact_number"];
+$img_link = $_POST["img_link"];
 
-$id = $_GET['id'];
-if ($conn == false){
-    die ("Connection failed: " . mysqli_connect_error());
+
+
+
+$sql = "UPDATE hotels SET name='$name', address='$address', contact_number='$contact_number', img_link='$img_link' WHERE id='$id'";
+
+
+if(mysqli_query($conn, $sql)){
+    header("Location: ../management.php");
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
 }
 
-$SQL = "SELECT * FROM hotel WHERE id = '$id'";
+// Close connection
+mysqli_close($conn);
 
-    if ($result = mysqli_query($conn, $SQL)) {
-        $row = mysqli_fetch_assoc($result);
-            $hotel_name = $row['hotel_name'];
-            $hotel_address = $row['hotel_address'];
-            $hotel_phone = $row['hotel_phone'];
-    }
-    else{
-        echo "Error: Could not able to execute sql." . mysqli_error($conn);
-    }
-
-    //mysql close link
-    mysqli_close($conn);
+?>

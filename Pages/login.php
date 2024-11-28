@@ -44,7 +44,12 @@
             <div class=''>
                 <h1 class="text-3xl font-bold">Log IN</h1>
                 <h3>Let's get you started</h3>
-
+                <?php if (isset($_GET['error']) && !empty($_GET['error'])) {
+                    echo '<div class="alert alert-error">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ban"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg>
+        <span>' . $_GET['error'] . '</span>
+    </div>';
+                }?>
                 <div>
                     <form method="POST" action="../backend/login-action.php" class="flex flex-col gap-4 py-5">
                         <label class="input input-bordered flex items-center gap-2">

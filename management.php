@@ -47,22 +47,22 @@
     <div class="modal-box">
         <h3 class="text-lg font-bold">Add Hotel</h3>
         <div class="modal-action">
-                <form method="POST" action="/backend/add-hotel.php" class="flex flex-col gap-4 py-5 w-full">
+                <form method="POST" action="backend/add-hotel.php" class="flex flex-col gap-4 py-5 w-full">
                     <label class="input input-bordered flex items-center gap-2">
                         Name
-                        <input name="name" type="text" class="grow border-0 rounded-md" placeholder="Daisy" />
+                        <input required name="name" type="text" class="grow border-0 rounded-md" placeholder="Daisy" />
                     </label>
                     <label class="input input-bordered flex items-center gap-2">
                         Address
-                        <input  name="address" type="text" class="grow border-0 rounded-md" placeholder="" />
+                        <input required name="address" type="text" class="grow border-0 rounded-md" placeholder="" />
                     </label>
                     <label class="input input-bordered flex items-center gap-2">
                         Contact Number
-                        <input  name="contact_number" type="text" class="grow border-0 rounded-md" placeholder="" />
+                        <input required  name="contact_number" type="text" class="grow border-0 rounded-md" placeholder="" />
                     </label>
                     <label class="input input-bordered flex items-center gap-2">
                         Image Link
-                        <input name="img_link"  type="text" class="grow border-0 rounded-md" placeholder="" />
+                        <input required name="img_link"  type="text" class="grow border-0 rounded-md" placeholder="" />
                     </label>
                     <div class="card-actions flex flex-col end-0">
                         <button type="submit" class="place-self-end btn w-fit btn-primary">

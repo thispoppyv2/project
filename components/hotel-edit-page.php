@@ -43,17 +43,21 @@
                 echo  '
             <div class="card-body">
                <img class="rounded-2xl" src="'.$hotel['img_link'].'"/>
+                <label class="input input-bordered flex items-center gap-2">
+                     Hotel ID
+                <input readonly value="'.$id.'" name="id" class="input w-full">
+               </label>
                <label class="input input-bordered flex items-center gap-2">
-                     Room Number
+                     Name
                 <input value="'.$hotel['name'].'" name="name" class="input w-full">
                </label>
                  <label class="input input-bordered flex items-center gap-2">
-                     Room Type
+                     Address
                 <input value="'.$hotel['address'].'" name="address" class="input w-full">
                </label>
                 <label class="input input-bordered flex items-center gap-2">
-                     Max Capacity
-                <input value="'.$hotel['contact_number'].'" name="contact_number" class="input w-full">
+                     Contact Number
+                <input type="number" value="'.$hotel['contact_number'].'" name="contact_number" class="rounded-xl bg-amber-950/[.025%] input border-0 w-full">
                </label>
                <label class="input input-bordered flex items-center gap-2">
                      Image Link

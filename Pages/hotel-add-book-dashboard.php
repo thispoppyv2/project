@@ -25,9 +25,9 @@
 
 </head>
 <body class="h-svh ">
-<?php include "../components/heronavbar.php"; ?>
+<?php include "../components/dashboardnavbar.php"; ?>
 <div>
-    <form action="../backend/add-book.php" method="post">
+    <form action="../backend/add-book-dashboard.php" method="post">
         <div class="max-w-lg m-auto card card-bordered h-1/2 p-5 my-10 flex ">
             <h1 class="text-center text-3xl font-bold">Add Booking</h1>
             <div class="card">
@@ -43,7 +43,7 @@
                 <label class="input input-bordered flex items-center gap-2">
                      Hotel
                     <input readonly value="'.$hotel['name'].'" name="booked_hotel" class="input w-full">
-                    <input readonly value="'.$id.'" name="booked_hotel" class="input w-full">
+                    <input readonly value="'.$id.'" name="id" class="input w-full">
                 </label>
                 <img class="rounded-2xl" src="'.$hotel['img_link'].'"/>
                 <label class="flex items-center gap-2">

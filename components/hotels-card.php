@@ -34,7 +34,7 @@ if($result = mysqli_query($conn, $sql)){
         // Free result set
         mysqli_free_result($result);
     } else{
-        echo "No records were found.";
+        echo '<div class="card card-bordered w-full p-5 col-span-3">No Hotels Found</div>';
     }
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
