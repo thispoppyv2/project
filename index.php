@@ -90,7 +90,8 @@
             <p>"Cozy Comfort" - Relax in our essential rooms, perfect for budget-conscious travelers.<br><br><br>
             </p>
             <div class="card-actions justify-end">
-                <a href="/Pages/book.php" class="btn btn-primary">Book Now</a>
+                <a href="/project/Pages/book.php" class="btn btn-primary">Book Now</a>
+
             </div>
         </div>
     </div>
@@ -104,7 +105,8 @@
             <h2 class="card-title">Premium Room</h2>
             <p>"Elevated Experience" - Upgrade to spacious rooms with premium amenities for a memorable stay.<br><br></p>
             <div class="card-actions justify-end">
-                <a href="/Pages/book.php" class="btn btn-primary">Book Now</a>
+                <a href="/project/Pages/book.php" class="btn btn-primary">Book Now</a>
+
             </div>
         </div>
     </div>
@@ -118,7 +120,7 @@
             <h2 class="card-title">Deluxe Room</h2>
             <p>"Luxury Haven" - Indulge in opulent suites with top-notch services, tailored for discerning guests. <br><br></p>
             <div class="card-actions justify-end">
-                <a href="/Pages/book.php" class="btn btn-primary">Book Now</a>
+                <a href="/project/Pages/book.php" class="btn btn-primary">Book Now</a>
             </div>
         </div>
     </div>
