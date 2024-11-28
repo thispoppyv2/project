@@ -1,4 +1,5 @@
 <?php
+//di ko alam kung tama to ha nicopy ko lang.
 global $conn;
 include './backend/connection.php';
 
@@ -11,16 +12,16 @@ if($result = mysqli_query($conn, $sql)){
     if(mysqli_num_rows($result) > 0){
         echo "<table class='table'>";
         echo "<tr>";
-        echo "<th>Room ID</th>";
-        echo "<th>Room Type</th>";
-        echo "<th>Max Capacity</th>";
+        echo "<th>Full Name</th>";
+        echo "<th>Contact Number</th>";
+        echo "<th>Room Selected</th>";
+        echo "<th>Date Arriving</th>";
         echo "</tr>";
         while($row = mysqli_fetch_array($result)){
             echo "<tr>";
             $id = $row['id'];
             echo "<td class='flex flex-row items-center gap-2'>" . $row['id'] . "<img class='rounded-2xl h-9 w-16'  src=".$row['img_link']."> </td>";
             echo "<td>" . $row['name'] . "</td>";
-            echo "<td>" . $row['address'] . "</td>";
             echo "<td>" . $row['contact_number'] . "</td>";
             //gagawa kayo nung hotel-delete.php
             echo '<td>

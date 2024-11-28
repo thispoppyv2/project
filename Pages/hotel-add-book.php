@@ -27,7 +27,7 @@
 <body class="h-svh ">
 <?php include "../components/heronavbar.php"; ?>
 <div>
-    <form action="../backend/hotel-add-book.php" method="post">
+    <form action="../backend/add-book.php" method="post">
         <div class="max-w-lg m-auto card card-bordered h-1/2 p-5 my-10 flex ">
             <h1 class="text-center text-3xl font-bold">Add Booking</h1>
             <div class="card">
@@ -54,16 +54,19 @@
                     <input class="input input-bordered w-full">
                 </label>
                 <label class=" flex items-center gap-2">
-                          Select Room
+                          Select Room Type
                           <select class="select select-bordered w-full h-4"> 
-                      <option value="king_room">King Room</option>
-                      <option value="queen_room">Queen Room</option>
-                      <option value="double_bed">Double Bed</option>
-                       <option value="single_bed">Single Bed</option>
+                      <option value="king_room">Standard Room</option>
+                      <option value="queen_room">Premium Room</option>
+                      <option value="double_bed">Deluxe Room</option>
                     </select>
                 </label>
                  <label class=" flex items-center gap-2">
                      Date Arriving
+                    <input type="datetime-local" class="input rounded-xl bg-amber-950/5 border-black/10 input-bordered w-full">
+                </label>
+                <label class=" flex items-center gap-2">
+                     Date Departure
                     <input type="datetime-local" class="input rounded-xl bg-amber-950/5 border-black/10 input-bordered w-full">
                 </label>
            
