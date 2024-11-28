@@ -13,7 +13,7 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d'z
+                        clifford: '#da373d'
                     }
                 }
             },
@@ -25,6 +25,7 @@
 
 </head>
 <body>
+
 <?php include "../components/dashboardnavbar.php"; ?>
 
 
@@ -32,7 +33,7 @@
     <div class="max-w-lg m-auto card card-bordered h-1/2 p-5 my-10 flex ">
         <h1 class="text-center text-3xl font-bold">Edit Hotel</h1>
         <div class="card">
-            <?php
+            <?php global $conn;
             include '../backend/connection.php';
             $id = $_GET["id"];
             $sql = "SELECT * FROM hotels where id = $id";
@@ -43,15 +44,15 @@
             <div class="card-body">
                <img class="rounded-2xl" src="'.$hotel['img_link'].'"/>
                <label class="input input-bordered flex items-center gap-2">
-                     Name
+                     Room Number
                 <input value="'.$hotel['name'].'" name="name" class="input w-full">
                </label>
                  <label class="input input-bordered flex items-center gap-2">
-                     Address
+                     Room Type
                 <input value="'.$hotel['address'].'" name="address" class="input w-full">
                </label>
                 <label class="input input-bordered flex items-center gap-2">
-                     Contact Number
+                     Max Capacity
                 <input value="'.$hotel['contact_number'].'" name="contact_number" class="input w-full">
                </label>
                <label class="input input-bordered flex items-center gap-2">
@@ -61,7 +62,9 @@
                   <button type="submit" class="btn btn-accent">Confirm</button>
             </div>
             ';
-
+            }
+            else{
+                echo "Error: Unable to retrieve hotel information.";
             }
             ?>
 

@@ -47,7 +47,6 @@
     <div class="modal-box">
         <h3 class="text-lg font-bold">Add Hotel</h3>
         <div class="modal-action">
-
                 <form method="POST" action="/backend/add-hotel.php" class="flex flex-col gap-4 py-5 w-full">
                     <label class="input input-bordered flex items-center gap-2">
                         Name

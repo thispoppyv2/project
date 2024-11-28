@@ -1,4 +1,3 @@
-<?php ?>
 
 <!doctype html>
 <html data-theme="autumn" lang="en">
@@ -29,6 +28,7 @@
 <body>
 
 <?php include "./components/heronavbar.php"; ?>
+
 
 <div class='m-auto flex'>
 <div>
@@ -78,47 +78,47 @@
 </div>
 
 
-
-<div class="p-5 flex flex-row w-3/5 m-auto gap-3">
+<div class="p-5 flex flex-row w-3/5 m-auto gap-5">
     <div class="card bg-base-100 w-96 shadow-xl m-auto p-1">
         <figure>
             <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes" />
+                    src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t1.15752-9/462550168_913582737072070_5008661344494815039_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFuoMkrTmmwKpsuo0Ge20j9kHgRW4VvYrCQeBFbhW9isFL_hJhhqoUdp3kqGYAmmedOCpym0b9xTPP9eg0xVzqT&_nc_ohc=IfQz4lDthgUQ7kNvgGbHIct&_nc_zt=23&_nc_ht=scontent.fmnl8-4.fna&oh=03_Q7cD1QGAodAJV2-Pbrh8NF3fLSbiYNurhssjb_6D4gXSB0K--Q&oe=676F75EC"
+                     alt="Shoes" />
         </figure>
         <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 class="card-title">Standard Room</h2>
+            <p>"Cozy Comfort" - Relax in our essential rooms, perfect for budget-conscious travelers.<br><br><br>
+            </p>
             <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+                <button class="btn btn-primary">Book Now</button>
             </div>
         </div>
     </div>
     <div class="card bg-base-100 w-96 shadow-xl m-auto p-1">
         <figure>
             <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/462555694_589706760262410_3743343193774319040_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGE1LUYuAhnqF9E5XUH1DePec9JAp_p5gN5z0kCn-nmA1qDKI9reWpMrwF6FH8-YcE1Sjmpq8CbGZhG-cAwgeNB&_nc_ohc=829heOUHp9oQ7kNvgFw5Hsr&_nc_zt=23&_nc_ht=scontent.fmnl8-1.fna&oh=03_Q7cD1QHL54a4ghVpvNf5suZ4pNH4RNenm0xp6hLKEC29TH1E2A&oe=676F9BBD"
                     alt="Shoes" />
         </figure>
         <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 class="card-title">Premium Room</h2>
+            <p>"Elevated Experience" - Upgrade to spacious rooms with premium amenities for a memorable stay.<br><br></p>
             <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+                <button class="btn btn-primary">Book Now</button>
             </div>
         </div>
     </div>
     <div class="card bg-base-100 w-96 shadow-xl m-auto p-1">
         <figure>
             <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t1.15752-9/462550168_913582737072070_5008661344494815039_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFuoMkrTmmwKpsuo0Ge20j9kHgRW4VvYrCQeBFbhW9isFL_hJhhqoUdp3kqGYAmmedOCpym0b9xTPP9eg0xVzqT&_nc_ohc=IfQz4lDthgUQ7kNvgGbHIct&_nc_zt=23&_nc_ht=scontent.fmnl8-4.fna&oh=03_Q7cD1QGAodAJV2-Pbrh8NF3fLSbiYNurhssjb_6D4gXSB0K--Q&oe=676F75EC"
                     alt="Shoes" />
         </figure>
         <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 class="card-title">Deluxe Room</h2>
+            <p>"Luxury Haven" - Indulge in opulent suites with top-notch services, tailored for discerning guests. <br><br></p>
             <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+                <button class="btn btn-primary">Book Now</button>
             </div>
         </div>
     </div>

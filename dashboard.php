@@ -35,6 +35,7 @@
             <div class="card-body p-5">
                 <div class="card-title">Total Hotels</div>
                 <?php
+                global $conn;
                 include './backend/connection.php';
                 $sql = "SELECT * FROM hotels";
 

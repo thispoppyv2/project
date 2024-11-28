@@ -1,6 +1,7 @@
 <?php
 
 
+global $conn;
 include '../backend/connection.php';
 $id = $_GET["id"];
 $sql = "DELETE FROM hotels WHERE id = '$id'";
@@ -12,5 +13,3 @@ if ($result) {
     echo "<script>alert('Hotel Not Deleted')</script>";
     header("Location:/project/management.php");
 }
-
-?>

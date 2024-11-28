@@ -44,15 +44,16 @@
             <div class=''>
                 <h1 class="text-3xl font-bold">Log IN</h1>
                 <h3>Let's get you started</h3>
+
                 <div>
-                    <form method="POST" action="#" class="flex flex-col gap-4 py-5">
+                    <form method="POST" action="../backend/login-action.php" class="flex flex-col gap-4 py-5">
                         <label class="input input-bordered flex items-center gap-2">
                             Email
-                            <input type="text" class="grow border-0 rounded-md" placeholder="Daisy" />
+                            <input type="text" class="grow border-0 rounded-md" name="email" placeholder="Daisy" required />
                         </label>
                         <label class="input input-bordered flex items-center gap-2">
                             Password
-                            <input type="password" class="grow border-0 rounded-md" placeholder="" />
+                            <input type="password" class="grow border-0 rounded-md" name="password" placeholder="" required />
                         </label>
                         <button class="w-full btn btn-primary">Log in</button>
                     </form>
