@@ -21,7 +21,7 @@ if($result = mysqli_query($conn, $sql)){
             echo "<div>" . $row['contact_number'] . "</div>";
             //gagawa kayo nung hotel-delete.php
             echo '<td>
-                <div class="flex gap-2">
+                <div class="flex gap-5">
                 <a class="btn btn-circle w-64 m-auto" href="hotel-add-book.php?id='.$row['id'].'">Book Now</a>
                   </div>
                 </td>';

@@ -82,7 +82,7 @@
     <div class="card bg-base-100 w-96 shadow-xl m-auto p-1">
         <figure>
             <img
-                    src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t1.15752-9/462550168_913582737072070_5008661344494815039_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFuoMkrTmmwKpsuo0Ge20j9kHgRW4VvYrCQeBFbhW9isFL_hJhhqoUdp3kqGYAmmedOCpym0b9xTPP9eg0xVzqT&_nc_ohc=IfQz4lDthgUQ7kNvgGbHIct&_nc_zt=23&_nc_ht=scontent.fmnl8-4.fna&oh=03_Q7cD1QGAodAJV2-Pbrh8NF3fLSbiYNurhssjb_6D4gXSB0K--Q&oe=676F75EC"
+                    src="https://scontent.fmnl11-1.fna.fbcdn.net/v/t1.15752-9/462584209_2318808791851970_1736446341966561453_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHxlEZWzMlAPtt4lGeVs59qPW_F_KnqjF09b8X8qeqMXbzC58xthCviVF70K_gZ5y565T3oZ3n012_nQ1YiXzCp&_nc_ohc=1i2Bye-d55wQ7kNvgHQy9MQ&_nc_zt=23&_nc_ht=scontent.fmnl11-1.fna&oh=03_Q7cD1QFYn1gKQxOZPF7vgLQPwxhvgz8XV2I0uA816nliay0drQ&oe=6770B31D"
                      alt="Shoes" />
         </figure>
         <div class="card-body">
@@ -113,7 +113,7 @@
     <div class="card bg-base-100 w-96 shadow-xl m-auto p-1">
         <figure>
             <img
-                    src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t1.15752-9/462550168_913582737072070_5008661344494815039_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFuoMkrTmmwKpsuo0Ge20j9kHgRW4VvYrCQeBFbhW9isFL_hJhhqoUdp3kqGYAmmedOCpym0b9xTPP9eg0xVzqT&_nc_ohc=IfQz4lDthgUQ7kNvgGbHIct&_nc_zt=23&_nc_ht=scontent.fmnl8-4.fna&oh=03_Q7cD1QGAodAJV2-Pbrh8NF3fLSbiYNurhssjb_6D4gXSB0K--Q&oe=676F75EC"
+                    src="https://scontent.fmnl11-1.fna.fbcdn.net/v/t1.15752-9/462550168_913582737072070_5008661344494815039_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFuoMkrTmmwKpsuo0Ge20j9kHgRW4VvYrCQeBFbhW9isFL_hJhhqoUdp3kqGYAmmedOCpym0b9xTPP9eg0xVzqT&_nc_ohc=IfQz4lDthgUQ7kNvgHiNNQJ&_nc_zt=23&_nc_ht=scontent.fmnl11-1.fna&oh=03_Q7cD1QGk1UkCSGv_urhUSNIW8OAYN_76wTfGOSJVn8SZYV32RQ&oe=6770C76C"
                     alt="Shoes" />
         </figure>
         <div class="card-body">
